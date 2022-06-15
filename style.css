@@ -1,0 +1,145 @@
+
+body {
+    background-color: #f3f2f2;
+}
+hr {
+    border-color: #f3f2f2;
+}
+
+.site-header {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.site-header:hover {
+    font-size: 30px;
+    padding: 15px;
+    color: #226dc2;
+}
+
+.btns-holder {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.btn {
+    border: none;
+    background-color: #f3f021;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #226dc2;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #226dc2;
+    color: #e6e94b;
+}
+
+#sort-desc {
+    margin: 0 20px;
+    transition: all 0.7s ease-in-out;
+}
+
+#sort-asc, #sort-rating {
+    transition: all 0.7s ease-in-out;
+}
+
+#sort-desc:hover, #sort-asc:hover, #sort-rating:hover {
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+.goods-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1168px;
+    margin: auto;
+}
+
+.good-card {
+    max-width: 250px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    background-color: #fff;
+    max-height: 400px;
+    box-shadow: 0 0 10px #ccc;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.good-card:hover {
+    box-shadow: 0 0 20px #9b9898;
+}
+
+.good-card img {
+    margin-top: 20px;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.good-card:nth-child(4) img {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.good-card:nth-child(6) img {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.line {
+    height: 1px;
+    display: flex;
+    max-width: 80%;
+    background-color: #e6e94b;
+    margin: 20px auto;
+}
+
+.text-holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+h1 {
+    max-width: 210px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+p {
+   text-align: center;
+}
+
+.buy {
+    max-height: 25px;
+    min-width: 65px;
+    background-color: #190ae9;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    color: #e6e94b
+}
+
+.buy:hover {
+    background-color: #e6e94b;
+    color:#190ae9;
+    font-weight: bold;
+}
