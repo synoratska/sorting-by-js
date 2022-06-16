@@ -23,103 +23,141 @@
           <button class="btn" id="sort-rating">Sorted by Rating</button>
         </div>
 
-        <div class="profile-holder">
-          <div class="profile">
+        
+        <ul class="searchbar">
+            <form action="#">
+                <input type="search" placeholder="Type the product" />
+                <i class="fa fa-search" id="search-icon"></i>
+            </form>
+        </ul>
+
+        <nav class="profile-holder">
+          <ul class="profile">
             <i class="fa-regular fa-face-smile"></i>
+          </ul>
+
+
+          <ul class="cart sum-prices">
+            <!--Shopping cart logo-->
+            <i class="fa-solid fa-bag-shopping shoppingCartButton"></i>
+            <!--The total prices of products in the shopping cart -->
+            <h6 id="sum-prices"></h6>
+          </ul>
+          <div class="producstOnCart hide">
+            <div class="overlay"></div>
+            <div class="top">
+              <button id="closeButton">
+                <i class="fas fa-times-circle"></i>
+              </button>
+              <h3>Cart</h3>
+            </div>
+            <ul id="buyItems">
+              <h4 class="empty">Your shopping cart is empty</h4>
+              <!-- <li class="buyItem">
+                  <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                  <div>
+                      <h5>Products Name</h5>
+                      <h6>$199</h6>
+                      <div>
+                          <button>-</button>
+                          <span class="countOfProduct">1</span>
+                          <button>+</button>
+                      </div>
+                  </div>
+              </li> -->
+            </ul>
+            <button class="btn checkout hidden">Check out</button>
           </div>
-          <div class="cart">
-            <i class="fa-solid fa-bag-shopping"></i>
-          </div>
-        </div>
+        </nav>
       </div>
 
       <div class="clearfix"></div>
       <hr />
 
       <div class="goods-wrap">
-      
-          <div class="good-card" data-price="10.40" data-rating="5">
-            <img src="/assets/img-001.jpg" alt="img-001" />
-            <span class="line"></span>
-            <h1>Wholesale Pack of 6 Ukraine Country Flag</h1>
-            <div class="text-holder">
-              <p>$10.40</p>
-              <button class="buy btn">Buy</button>
-            </div>
-          </div>
-
-          <div class="good-card" data-price="19.90" data-rating="6">
-            <img src="/assets/img-002.jpg" alt="img-002" />
-            <span class="line"></span>
-            <h1>Ukraine Awareness Ribbon Butterfly Enamel Lapel Pin</h1>
-            <div class="text-holder">
-              <p>$19.90</p>
-              <button class="buy btn">Buy</button>
-            </div>
-          </div>
-
-          <div class="good-card" data-price="4.99" data-rating="5">
-            <img src="/assets/img-003.jpg" alt="img-003" />
-            <span class="line"></span>
-            <h1>Ukraine Country Metal Key Ring</h1>
-            <div class="text-holder">
-              <p>$4.99</p>
-              <button class="buy btn">Buy</button>
-            </div>
-          </div>
-
-          <div class="good-card" data-price="19.99" data-rating="8">
-            <img src="/assets/img-004.jpg" alt="img-004" />
-            <span class="line"></span>
-            <h1>Ukraine country 20" Chain Necklace With Focal Charm</h1>
-            <div class="text-holder">
-              <p>$19.99</p>
-              <button class="buy btn">Buy</button>
-            </div>
-          </div>
-
-          <div class="good-card" data-price="3.99" data-rating="2">
-            <img src="/assets/img-005.jpg" alt="img-005" />
-            <span class="line"></span>
-            <h1>Pray for Ukraine Flag Heart Vinyl Sticker</h1>
-            <div class="text-holder">
-              <p>$3.99</p>
-              <button class="buy btn">Buy</button>
-            </div>
-          </div>
-
-          <div class="good-card" data-price="39.99" data-rating="7">
-            <img src="/assets/img-006.jpg" alt="img-006" />
-            <span class="line"></span>
-            <h1>Ukraine Map Shape Pendant Necklace</h1>
-            <div class="text-holder">
-              <p>$39.99</p>
-              <button class="buy btn">Buy</button>
-            </div>
-          </div>
-
-          <div class="good-card" data-price="12.99" data-rating="6">
-            <img src="/assets/img-008.jpg" alt="img-008" />
-            <span class="line"></span>
-            <h1>Ukraine Colors String Thread Bracelets</h1>
-            <div class="text-holder">
-              <p>$12.99</p>
-              <button class="buy btn">Buy</button>
-            </div>
-          </div>
-
-          <div class="good-card" data-price="9.99" data-rating="1">
-            <img src="/assets/img-007.jpg" alt="img-007" />
-            <span class="line"></span>
-            <h1>Ukraine National Football Team Soccer Sticker</h1>
-            <div class="text-holder">
-              <p>$9.99</p>
-              <button class="buy btn">Buy</button>
-            </div>
+        <div class="good-card" data-price="10.40" data-rating="5">
+          <img src="/assets/img-001.jpg" alt="img-001" />
+          <span class="line"></span>
+          <h1>Wholesale Pack of 6 Ukraine Country Flag</h1>
+          <div class="text-holder">
+            <p>$10.40</p>
+            <button class="buy btn">Buy</button>
           </div>
         </div>
+
+        <div class="good-card" data-price="19.90" data-rating="6">
+          <img src="/assets/img-002.jpg" alt="img-002" />
+          <span class="line"></span>
+          <h1>Ukraine Awareness Ribbon Butterfly Enamel Lapel Pin</h1>
+          <div class="text-holder">
+            <p>$19.90</p>
+            <button class="buy btn">Buy</button>
+          </div>
+        </div>
+
+        <div class="good-card" data-price="4.99" data-rating="5">
+          <img src="/assets/img-003.jpg" alt="img-003" />
+          <span class="line"></span>
+          <h1>Ukraine Country Metal Key Ring</h1>
+          <div class="text-holder">
+            <p>$4.99</p>
+            <button class="buy btn">Buy</button>
+          </div>
+        </div>
+
+        <div class="good-card" data-price="19.99" data-rating="8">
+          <img src="/assets/img-004.jpg" alt="img-004" />
+          <span class="line"></span>
+          <h1>Ukraine country 20" Chain Necklace With Focal Charm</h1>
+          <div class="text-holder">
+            <p>$19.99</p>
+            <button class="buy btn">Buy</button>
+          </div>
+        </div>
+
+        <div class="good-card" data-price="3.99" data-rating="2">
+          <img src="/assets/img-005.jpg" alt="img-005" />
+          <span class="line"></span>
+          <h1>Pray for Ukraine Flag Heart Vinyl Sticker</h1>
+          <div class="text-holder">
+            <p>$3.99</p>
+            <button class="buy btn">Buy</button>
+          </div>
+        </div>
+
+        <div class="good-card" data-price="39.99" data-rating="7">
+          <img src="/assets/img-006.jpg" alt="img-006" />
+          <span class="line"></span>
+          <h1>Ukraine Map Shape Pendant Necklace</h1>
+          <div class="text-holder">
+            <p>$39.99</p>
+            <button class="buy btn">Buy</button>
+          </div>
+        </div>
+
+        <div class="good-card" data-price="12.99" data-rating="6">
+          <img src="/assets/img-008.jpg" alt="img-008" />
+          <span class="line"></span>
+          <h1>Ukraine Colors String Thread Bracelets</h1>
+          <div class="text-holder">
+            <p>$12.99</p>
+            <button class="buy btn">Buy</button>
+          </div>
+        </div>
+
+        <div class="good-card" data-price="9.99" data-rating="1">
+          <img src="/assets/img-007.jpg" alt="img-007" />
+          <span class="line"></span>
+          <h1>Ukraine National Football Team Soccer Sticker</h1>
+          <div class="text-holder">
+            <p>$9.99</p>
+            <button class="buy btn">Buy</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>
+    <script src="shoppingCart.js"></script>
   </body>
 </html>
