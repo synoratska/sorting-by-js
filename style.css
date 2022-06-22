@@ -25,11 +25,6 @@ hr {
   color: #226dc2;
 }
 
-.headline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .btns-holder {
   display: flex;
@@ -70,7 +65,7 @@ hr {
     color: #226dc2;
 }
 
-/* clears the 'X' from Internet Explorer */
+/* clears the 'X' from Internet Explorer
 input[type="search"]::-ms-clear {
 display: none;
 width: 0;
@@ -83,16 +78,16 @@ height: 0;
 }
 
 /* clears the 'X' from Chrome */
-input[type="search"]::-webkit-search-decoration,
+/* input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
 display: none;
-}
+} */
 
 
 
-.searchbar form {
+/* .searchbar form {
     position: absolute;
     right: 17px;
     top: 27.5px;
@@ -159,7 +154,7 @@ display: none;
 #search-icon:active,
 #search-icon:focus {
     outline: none;
-}
+}  */
 
 
 .btn {
@@ -304,74 +299,6 @@ p {
     animation: fade 1s;
 }
 
-.producstOnCart::-webkit-scrollbar {
-    display: none;
-}
-
-@keyframes fade {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: none;
-    }
-}
-
-.producstOnCart::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-}
-
-.hide {
-    display: none;
-    visibility: none;
-}
-
-.producstOnCart ul {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.producstOnCart .buyItem {
-    border-bottom: #aaa 1px solid;
-    width: 90%;
-    padding: 10px 0;
-    display: flex;
-}
-
-.producstOnCart img {
-    width: 90px;
-}
-
-.producstOnCart .top {
-    display: flex;
-    background-color: #616161;
-    text-align: center;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-
-
-.producstOnCart > .checkout {
-    font-size: 0.9rem;
-    margin: 20px auto;
-    border: none;
-    background-color: #297075;
-    padding: 10px 20px;
-    color: #eee;
-    cursor: pointer;
-}
-
-
-.producstOnCart .empty {
-    justify-self: center;
-    margin: 150px auto;
-}
 
 @media screen and (max-width: 620px) {
     #sort-desc, #sort-asc, #sort-rating {
@@ -379,12 +306,12 @@ p {
        font-size: 10px;
        min-width: 110px;
       }
-      .headline {
-        flex-direction: column;
-      }
       .profile-holder {
         align-self: flex-end;
         margin-right: 20px;
+      }
+      .btns-holder {
+        justify-content: center;
       }
 
       #sort-desc {
